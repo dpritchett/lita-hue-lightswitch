@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-hue-lightswitch"
-  spec.version       = "0.1.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["Daniel J. Pritchett"]
   spec.email         = ["daniel@gremlin.com"]
   spec.description   = "Control Hue lights with a Lita chatbot"
@@ -14,9 +14,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  # START:runtime
   spec.add_runtime_dependency "lita", ">= 4.7"
   spec.add_runtime_dependency "hue", "~> 0.2.0"
-  spec.add_runtime_dependency "color", "~> 1.8"
+  # END:runtime
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"
